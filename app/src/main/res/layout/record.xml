@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/lightBlue">
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:id="@+id/header_record">
+        <TextView
+            android:id="@+id/number_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="№ заказа"
+            android:textColor="@color/brown"
+            android:fontFamily="@font/montserrat"/>
+        <TextView
+            android:id="@+id/date_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Дата заказа: 01.01.2000г."
+            android:textColor="@color/brown"
+            android:fontFamily="@font/montserrat"/>
+
+        <TextView
+            android:id="@+id/fio_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="ФИО: Иванов Иван Иванович"
+            android:textColor="@color/brown"
+            android:fontFamily="@font/montserrat"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/zakaz_body"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/header_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Человек: 0"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Номер: 0"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Сумма: 0"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Услуги: 0"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Дата заезда: 0"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Дата выезда: 0"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Номер телефона: 0"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/brown"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="ФИО:0"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/brown"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:background="@color/blue"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Принять"
+                android:textColor="@color/brown"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat" />
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:background="@color/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отклонить"
+                android:textColor="@color/brown"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
